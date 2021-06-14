@@ -1,0 +1,86 @@
+.chat{
+    font-size: 12px;
+    position: relative;
+   
+        
+        background: #FAFAFA;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 8px;
+    
+
+    &_messages{
+        height: 400px;
+        overflow-y: scroll;
+        padding: .5em;
+        &__joined{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            span{
+                background: #FFFFFF;
+                border-radius: 99px;
+                padding: 0.5em;
+                text-transform: capitalize;
+            }
+        }
+        
+        
+    }
+    &_form{
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+        padding: 0.5em;
+        border-radius: 0 0 8px 8px;
+        &__input{
+            outline: none;
+            border : none;
+            flex-grow: 1;
+            right: auto;
+            background-color: transparent;
+        }
+        &__button{
+            padding: 0 0.5em;
+            outline: none;
+            border : none;
+            background-color: transparent;
+        }
+    }
+}
+.message{
+    display: flex;
+    flex-direction: row;
+
+    &.reverse{
+        flex-direction: row-reverse;
+    }
+   
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        
+    }
+    &-identity{
+        display: flex;
+
+        font-size: 0.75em;
+        &--text{
+            right: auto;
+            flex-grow: 1;
+            &.sender{
+                color: #594fe0;
+            }
+        }
+    }
+    &-body{
+        margin: none !important;
+    }
+    
+}
