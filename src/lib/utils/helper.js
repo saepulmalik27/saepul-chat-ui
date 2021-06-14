@@ -55,10 +55,8 @@ export const convertToString = (val) => {
   let data;
   if ( typeof val === "string") {
     data = val;
-    console.log(typeof val);
   }else{
    data =  String(val);
-   console.log(typeof val);
   }
   return data;
 }

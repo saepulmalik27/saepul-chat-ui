@@ -2,7 +2,6 @@ import React from "react";
 import { convertStringToDate } from "../../utils/helper";
 
 const Message = ({ message, uid }) => {
-  console.log(message.sender.uid === uid );
   return (
     <div className={`message ${message.sender.uid === uid ? 'reverse' : ''}`}>
       <div className="message-wrapper">
